@@ -149,6 +149,8 @@ impl ApiServer {
             );
         }
 
+        panic!("Intentional panic!");
+
         // This runs forever, unless an error is returned somewhere within f (but nothing happens
         // for errors which might arise inside the connections we spawn from f, unless we explicitly
         // do something in their future chain). When this returns, ongoing connections will be
